@@ -11,7 +11,12 @@ public class ValidationResult
     {
         _errors.Add(error);
     }
-
+    
+    public void AddError(string message, string? code = null)
+    {
+        _errors.Add(new Error(message, code));
+    }
+    
     public void AddErrorRange(List<Error> errors)
     {
         _errors.AddRange(errors);

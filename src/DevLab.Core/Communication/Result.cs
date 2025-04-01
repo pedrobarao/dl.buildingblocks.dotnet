@@ -18,7 +18,7 @@ public class Result
                 throw new InvalidOperationException("A failed result must have at least one error.");
             default:
                 IsSuccess = isSuccess;
-                Errors = errors ?? new List<Error>();
+                Errors = errors ?? [];
                 break;
         }
     }
