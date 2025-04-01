@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>1.0.0</Version>
+        <PackageId>DevLab.Core</PackageId>
+        <Authors>Pedro Barão</Authors>
+        <RepositoryUrl>https://github.com/pedrobarao/dl.buildingblocks.dotnet</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/pedrobarao/dl.buildingblocks.dotnet</PackageProjectUrl>
+        <PackageDescription>DevLab - Building Blocks</PackageDescription>
+        <PackageTags>devlab buildingblocks core</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryBranch>main</RepositoryBranch>
+        <RepositoryCommit>$(SourceRevisionId)</RepositoryCommit>
+        <PackageOutputPath>$(OutputPath)</PackageOutputPath>
+    </PropertyGroup>
+
+</Project>

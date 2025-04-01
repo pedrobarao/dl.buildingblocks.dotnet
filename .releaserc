@@ -1,0 +1,25 @@
+﻿{
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "sed -i \"s#<Version>.*</Version>#<Version>${nextRelease.version}</Version>#g\" src/DevLab.Core/DevLab.Core.csproj",
+        "publishCmd": "dotnet nuget push ./nupkg/*.nupkg --source \"https://nuget.pkg.github.com/pedrobarao/index.json\" --api-key $GH_PACKAGES_TOKEN --skip-duplicate"
+      }
+    ],
+    "@semantic-release/github",
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "src/DevLab.Core/DevLab.Core.csproj"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
