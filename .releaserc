@@ -3,7 +3,7 @@
     "main",
     {
       "name": "release/*",
-      "prerelease": true,
+      "prerelease": "rc",
       "channel": "next"
     }
   ],
