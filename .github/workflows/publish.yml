@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - release/*
   workflow_dispatch: # Habilita o workflow para ser executado manualmente
 
 jobs:
@@ -33,7 +34,7 @@ jobs:
         with:
           name: nuget-package
           path: ./nupkg/*.nupkg
-          
+  
   release:
     needs: build
     runs-on: ubuntu-latest
