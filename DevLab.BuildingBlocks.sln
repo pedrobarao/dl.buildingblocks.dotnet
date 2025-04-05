@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\publish.yml = .github\workflows\publish.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevLab.WebApiDefaults", "DevLab.WebApiDefaults\DevLab.WebApiDefaults.csproj", "{76A1E8DD-19B1-4948-AE52-0AEE1E09F4CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,7 @@ Global
 		{E181BB13-0B3B-4D46-B2BF-3931054708EF} = {EB29901D-96AB-4B4B-9E06-98F3F9F438FD}
 		{1E2CE096-66FD-46D9-8768-B95EECB9B000} = {ACFA92AD-B41F-4072-A336-F04D1F6AB6D8}
 		{7E2ACE03-4F5D-4A0A-AF4B-BC353330BA42} = {1E2CE096-66FD-46D9-8768-B95EECB9B000}
+		{76A1E8DD-19B1-4948-AE52-0AEE1E09F4CB} = {70016872-2E11-4817-9878-3B53D91D93EF}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5A763212-6071-4BC1-B32B-E3A62E70F889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +45,9 @@ Global
 		{E181BB13-0B3B-4D46-B2BF-3931054708EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E181BB13-0B3B-4D46-B2BF-3931054708EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E181BB13-0B3B-4D46-B2BF-3931054708EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A1E8DD-19B1-4948-AE52-0AEE1E09F4CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A1E8DD-19B1-4948-AE52-0AEE1E09F4CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A1E8DD-19B1-4948-AE52-0AEE1E09F4CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A1E8DD-19B1-4948-AE52-0AEE1E09F4CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
