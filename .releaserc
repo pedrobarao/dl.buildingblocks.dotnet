@@ -10,7 +10,7 @@
       "@semantic-release/exec",
       {
         "prepareCmd": "sed -i \"s#<Version>.*</Version>#<Version>${nextRelease.version}</Version>#g\" src/DevLab.Core/DevLab.Core.csproj && sed -i \"s#<Version>.*</Version>#<Version>${nextRelease.version}</Version>#g\" src/DevLab.WebApiDefaults/DevLab.WebApiDefaults.csproj",
-        "publishCmd": "dotnet nuget push ./nupkg/*.nupkg --source \"https://nuget.pkg.github.com/pedrobarao/index.json\" --api-key $GH_PACKAGES_TOKEN --skip-duplicate"
+        "publishCmd": "dotnet nuget push ./src/DevLab.Core/bin/Release/*.nupkg --source \"https://nuget.pkg.github.com/pedrobarao/index.json\" --api-key $GH_PACKAGES_TOKEN --skip-duplicate && dotnet nuget push ./src/DevLab.WebApiDefaults/bin/Release/*.nupkg --source \"https://nuget.pkg.github.com/pedrobarao/index.json\" --api-key $GH_PACKAGES_TOKEN --skip-duplicate"
       }
     ],
     "@semantic-release/github",
