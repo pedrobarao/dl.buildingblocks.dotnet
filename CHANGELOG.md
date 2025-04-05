@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/pedrobarao/dl.buildingblocks.dotnet/compare/v1.1.0...v1.2.0) (2025-04-05)
+
+
+### Features
+
+* versionando ([7060b1c](https://github.com/pedrobarao/dl.buildingblocks.dotnet/commit/7060b1c1fc77588e5f566555e5e34e485ffde98c))
+* **WebApiDefaults:** Incluindo lib com padronização para APIs Web ([40b594f](https://github.com/pedrobarao/dl.buildingblocks.dotnet/commit/40b594ff6dc0dc04f035c06b7033be039d02cef9))
+
 # [1.1.0](https://github.com/pedrobarao/dl.buildingblocks.dotnet/compare/v1.0.0...v1.1.0) (2025-04-05)
 
 ### Features
